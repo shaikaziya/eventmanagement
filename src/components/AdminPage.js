@@ -22,12 +22,11 @@ export function AdminPage() {
       </nav>
 
       <div className="container">
-        <div>
+       
           <p>All Event Data</p>
-        </div>
-        <div>
           <button>Add Event</button>
-        </div>
+        
+      
         <AdminPageEventCards/>
 
         
