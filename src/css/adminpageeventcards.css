@@ -1,0 +1,18 @@
+a{
+    margin-right: 10px;
+}
+#delete{
+   background-color: red;
+}
+.container{
+    display:grid;
+    grid-template-columns: auto ;
+}
+img{
+    
+    width:200px;
+    height:200px;
+}
+.card{
+    margin-top: 40px;
+}
