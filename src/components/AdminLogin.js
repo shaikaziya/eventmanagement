@@ -8,6 +8,8 @@ export function AdminLogin() {
         <div className="image">
           <img src="https://media.gettyimages.com/photos/-picture-id1256651755?s=612x612"  alt=""></img>
         </div>
+
+        
         <div className="form-boxes">
           <form>
             <h1>Admin here</h1>

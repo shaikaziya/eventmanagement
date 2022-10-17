@@ -4,45 +4,48 @@ export function LoginForm() {
   return (
     <div>
       <div className="container">
-
-        
         <div className="image">
-          <img src="https://cdni.iconscout.com/illustration/premium/thumb/login-page-2578971-2147152.png" alt=""></img>
+          <img
+            src="https://cdni.iconscout.com/illustration/premium/thumb/login-page-2578971-2147152.png"
+            alt=""
+          ></img>
         </div>
 
-
         <div className="form-boxes">
-        <form>
-        <h1>Login</h1>
+          <form>
+            <h1>Login</h1>
             <p>Sign into your account</p>
-          <div className="form-group">
-            <input
-              type="text"
-              className="form-control"
-              id="name"
-              placeholder="Enter your Name"
-              aria-describedby="emailHelp"
-            />
-          </div>
-          <div className="form-group">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Enter your Email"
-              id="email"
-            />
-          </div>
-          
-          <button type="button" class="btn btn-dark">login</button>
-           
-        
-         
-        </form>
-        <hr/>
-        <p>Don't have an account? <a href="registerform">Register here</a></p>
-        <hr/><br/>
-        <p>Admin account? <a href="adminlogin">Admin</a></p>
-        
+            <div className="form-group">
+              <input
+                type="text"
+                className="form-control"
+                id="name"
+                placeholder="Enter your Name"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div className="form-group">
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Enter your Email"
+                id="email"
+              />
+            </div>
+
+            <button type="button" class="btn btn-dark">
+              login
+            </button>
+          </form>
+          <hr />
+          <p>
+            Don't have an account? <a href="registerform">Register here</a>
+          </p>
+          <hr />
+          <br />
+          <p>
+            Admin account? <a href="adminlogin">Admin</a>
+          </p>
         </div>
       </div>
     </div>
