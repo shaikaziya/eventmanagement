@@ -13,8 +13,8 @@ export function LoginForm() {
 
         <div className="form-boxes">
           <form>
-            <h1>Login</h1>
-            <p>Sign into your account</p>
+            <h1 className="login1">Login</h1>
+            <p className="login2">Sign into your account</p>
             <div className="form-group">
               <input
                 type="text"
