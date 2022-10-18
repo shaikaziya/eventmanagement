@@ -1,4 +1,4 @@
-
+// import './App.css';
 import { LoginForm } from './components/LoginForm';
 import {RegisterForm} from './components/RegisterForm'
 import { AdminLogin } from './components/AdminLogin';
@@ -6,6 +6,7 @@ import { AdminPage } from './components/AdminPage';
 import { Routes, Route } from "react-router-dom";
 export default function App() {
   return (
+    <section className='appclass'>
     <div className="App">
        <Routes>
     <Route path="/" element={<LoginForm/>} />
@@ -19,6 +20,7 @@ export default function App() {
 
 
     </div>
+    </section>
   );
 }
 

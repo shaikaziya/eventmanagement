@@ -22,7 +22,7 @@ export function LoginForm() {
                 id="name"
                 placeholder="Enter your Name"
                 aria-describedby="emailHelp"
-              />
+              /><br/>
             </div>
             <div className="form-group">
               <input
@@ -31,6 +31,7 @@ export function LoginForm() {
                 placeholder="Enter your Email"
                 id="email"
               />
+              <br/>
             </div>
 
             <button type="button" class="btn btn-dark">

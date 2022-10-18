@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 export function AdminLogin() {
   const navigate = useNavigate();
   return (
-    <div>
+    <div className="header">
       <div className="container">
         <div className="image">
           <img src="https://media.gettyimages.com/photos/-picture-id1256651755?s=612x612"  alt=""></img>

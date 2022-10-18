@@ -9,8 +9,8 @@ export function RegisterForm() {
         </div>
         <div className="form-boxes">
         <form>
-        <h1>Register here</h1>
-            <p>Sign up into your account</p>
+        <h1 className="register1">Register here</h1>
+            <p className="register2">Sign up into your account</p>
           <div className="form-group">
             <input
               type="text"
@@ -19,6 +19,7 @@ export function RegisterForm() {
               placeholder="Enter your Name"
               aria-describedby="emailHelp"
             />
+            <br/>
           </div>
           <div className="form-group">
             <input
@@ -27,6 +28,7 @@ export function RegisterForm() {
               placeholder="Enter your Email"
               id="email"
             />
+            <br/>
           </div>
           <div className="form-group">
             <input
@@ -35,6 +37,7 @@ export function RegisterForm() {
               placeholder="password"
               id="Password"
             />
+            <br/>
           </div>
           
           <button type="button" class="btn btn-dark">Register</button>

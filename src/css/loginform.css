@@ -4,16 +4,15 @@
     margin-top: 50px;
 }
 .image{
-   
     height: 10px;
     margin-top: 100px;
     margin-right: 60px;
 }
 .login1{
-    margin-left: 120px;
+    text-align: center;
 }
 .login2{
-    margin-left: 100px;
+    text-align: center;
 }
 /* .form-boxes{
     margin-top:80px;
