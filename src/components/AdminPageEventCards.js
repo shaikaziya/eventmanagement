@@ -27,7 +27,7 @@ export function AdminPageEventCards() {
 
       <div class="card" style={styles}>
         <img
-          src="https://s3.envato.com/files/276485772/HACKATHON2590.jpg"
+          src="https://res.cloudinary.com/practicaldev/image/fetch/s--G8d84OQM--/c_imagga_scale,f_auto,fl_progressive,h_720,q_auto,w_1280/https://thepracticaldev.s3.amazonaws.com/i/zp36f8br46sf1hybdk4l.png"
           class="card-img-top"
           alt=""
         />
@@ -48,7 +48,7 @@ export function AdminPageEventCards() {
 
       <div class="card" style={styles}>
         <img
-          src="https://s3.envato.com/files/276485772/HACKATHON2590.jpg"
+          src="https://img.traveltriangle.com/blog/wp-content/uploads/2018/08/415.jpg"
           class="card-img-top"
           alt=""
         />
