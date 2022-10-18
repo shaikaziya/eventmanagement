@@ -37,7 +37,7 @@ export function AdminLogin() {
 
             <button
               type="button"
-              class="btn btn-dark"
+              className="btn btn-dark"
               onClick={() => navigate("/adminpage")}
             >
               Admin login

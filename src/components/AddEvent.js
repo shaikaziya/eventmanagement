@@ -1,12 +1,30 @@
 import "../css/addevent.css";
+import { useNavigate } from "react-router-dom";
 
 export function AddEvent() {
+  const navigate = useNavigate();
+  const createEvent = (newEvent)=>{
+
+    console.log("createUser", newEvent)
+    fetch("https://62f4b482535c0c50e7608294.mockapi.io/addnewevent",{
+      method: "POST",
+      body: JSON.stringify(newEvent),
+      headers: {
+        "Content-Type": "application/json",
+      }
+    })
+    .then((data) => data.json())
+    .then(() => navigate("/"));
+
+   }
+  
   return (
     <div className="addeventclass">
         
         <div className="form-boxes">
         <p>Add New Event</p><br></br>
-          <form>
+          <form onSubmit={(newEvent)=>{
+            createEvent(newEvent)}}>
             <p>Image URL</p>
             
             <div className="form-group">
@@ -44,7 +62,7 @@ export function AddEvent() {
               <br/>
             </div>
 
-            <button type="button" class="btn btn-dark">
+            <button type="button" className="btn btn-dark">
               Add New Event 
             </button>
           </form>
@@ -54,3 +72,26 @@ export function AddEvent() {
       </div>
   );
 }
+
+
+
+// onSubmit: (newUser)=>{
+//   //  console.log("onSubmit",values);
+//    createUser(newUser)
+//   }
+//  })
+
+//  const createUser = (newUser)=>{
+
+//   console.log("createUser", newUser)
+//   fetch("https://62f4b482535c0c50e7608294.mockapi.io/users",{
+//     method: "POST",
+//     body: JSON.stringify(newUser),
+//     headers: {
+//       "Content-Type": "application/json",
+//     }
+//   })
+//   .then((data) => data.json())
+//   .then(() => navigate("/"));
+
+//  }
