@@ -1,12 +1,19 @@
+.container1{
+    
+}
+
+
 .container{
     display:grid;
     grid-template-columns: auto auto;
-    margin-top: 50px;
+    
 }
 .image{
     height: 10px;
     margin-top: 100px;
-    margin-right: 60px;
+    margin-left: 60px;
+   
+    
 }
 .login1{
     text-align: center;
@@ -24,6 +31,8 @@ button{
 .form-boxes{
     width:400px;
     margin-left: 200px;
+    margin-right: 150px;
+   
 } 
 /* img{
     width:100px;

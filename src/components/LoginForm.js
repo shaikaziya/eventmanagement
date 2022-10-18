@@ -2,7 +2,7 @@ import "../css/loginform.css";
 
 export function LoginForm() {
   return (
-    <div>
+    <div className="container1">
       <div className="container">
         <div className="image">
           <img

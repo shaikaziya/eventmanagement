@@ -1,12 +1,17 @@
-a{
-    margin-right: 10px;
+#edit{
+    background-color: blue;
+    margin-left: 60px;
+
 }
+
 #delete{
    background-color: red;
+   margin-left: 20px;
+   
 }
 .container{
     display:grid;
-    grid-template-columns: auto ;
+    grid-template-columns: auto auto auto  ;
 }
 img{
     
@@ -15,4 +20,5 @@ img{
 }
 .card{
     margin-top: 40px;
+    margin-left: 50px;
 }

@@ -26,11 +26,8 @@ export function AdminPage() {
           <p>All Event Data</p>
           <button>Add Event</button>
         
-      
-        <AdminPageEventCards/>
-
-        
           </div>
+          <AdminPageEventCards/>
         </div>
      
   );

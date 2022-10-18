@@ -1,12 +1,16 @@
 .container{
     display:grid;
     grid-template-columns: auto auto;
-   
-    
-    
 }
-.header{
+/* .header{
+    margin-top: 100px;;
     background-color:lightcyan;
     background-size: cover;
-}
+} */
 
+.form-boxes{
+    margin-top: 100px;
+}
+.admin1{
+    text-align: center;
+}

@@ -2,7 +2,7 @@ import "../css/registerform.css";
 
 export function RegisterForm() {
   return (
-    <div>
+    <div className="container1">
       <div className="container">
         <div className="image">
           <img src="https://cdni.iconscout.com/illustration/premium/thumb/login-page-2578971-2147152.png" alt=""></img>

@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 export function AdminLogin() {
   const navigate = useNavigate();
   return (
-    <div className="header">
+    <div >
       <div className="container">
         <div className="image">
           <img src="https://media.gettyimages.com/photos/-picture-id1256651755?s=612x612"  alt=""></img>
@@ -12,8 +12,8 @@ export function AdminLogin() {
         
         <div className="form-boxes">
           <form>
-            <h1>Admin here</h1>
-            <p>Admin account</p>
+            <h1 className="admin1">Admin here</h1>
+            <p className="admin1">Admin account</p>
             <div className="form-group">
               <input
                 type="text"
@@ -22,6 +22,7 @@ export function AdminLogin() {
                 value="adminlogin@gmail.com"
                 id="email"
               />
+              <br/>
             </div>
             <div className="form-group">
               <input
@@ -31,6 +32,7 @@ export function AdminLogin() {
                 value="admin"
                 id="Password"
               />
+              <br/>
             </div>
 
             <button
