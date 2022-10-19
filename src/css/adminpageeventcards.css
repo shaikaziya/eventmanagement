@@ -1,12 +1,14 @@
 #edit{
     background-color: blue;
     margin-left: 60px;
+    width:10px
 
 }
 
 #delete{
    background-color: red;
    margin-left: 20px;
+   width:10px
    
 }
 .container{

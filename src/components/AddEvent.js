@@ -5,7 +5,7 @@ export function AddEvent() {
   const navigate = useNavigate();
   const createEvent = (newEvent)=>{
 
-    console.log("createUser", newEvent)
+    console.log("createEvent 111111111111", newEvent)
     fetch("https://62f4b482535c0c50e7608294.mockapi.io/addnewevent",{
       method: "POST",
       body: JSON.stringify(newEvent),
@@ -14,7 +14,7 @@ export function AddEvent() {
       }
     })
     .then((data) => data.json())
-    .then(() => navigate("/"));
+    .then(() => navigate("participatelist"));
 
    }
   
@@ -62,7 +62,9 @@ export function AddEvent() {
               <br/>
             </div>
 
-            <button type="button" className="btn btn-dark">
+            <button     onClick={() => { navigate("participatelist");
+        }} 
+           type="button" className="btn btn-dark" >
               Add New Event 
             </button>
           </form>
@@ -75,23 +77,3 @@ export function AddEvent() {
 
 
 
-// onSubmit: (newUser)=>{
-//   //  console.log("onSubmit",values);
-//    createUser(newUser)
-//   }
-//  })
-
-//  const createUser = (newUser)=>{
-
-//   console.log("createUser", newUser)
-//   fetch("https://62f4b482535c0c50e7608294.mockapi.io/users",{
-//     method: "POST",
-//     body: JSON.stringify(newUser),
-//     headers: {
-//       "Content-Type": "application/json",
-//     }
-//   })
-//   .then((data) => data.json())
-//   .then(() => navigate("/"));
-
-//  }

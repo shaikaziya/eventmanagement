@@ -1,5 +1,5 @@
 import "../css/adminpageeventcards.css";
-
+import Button from '@mui/material/Button';
 export function AdminPageEventCards() {
   const styles = { width: "18rem" };
   return (
@@ -15,12 +15,12 @@ export function AdminPageEventCards() {
           <h5 className="card-title">Hackathone</h5>
           <p className="card-text">Eventdate : 2022-10-02 : 12.00pm</p>
           <p className="card-text">Event type : online</p>
-          <a href="/" className="btn btn-primary" id="edit">
-            Edit
-          </a>
-          <a href="/" className="btn btn-primary" id="delete">
-            Delete
-          </a>
+          <Button variant="contained" size="small"  id="edit">
+          Edit
+        </Button>
+        <Button variant="contained" size="small"  id="delete">
+          Delete
+        </Button>
         </div>
       </div>
 
@@ -35,12 +35,12 @@ export function AdminPageEventCards() {
           <h5 className="card-title">Coding Event</h5>
           <p className="card-text">Eventdate : 2022-05-20 : 12.00pm</p>
           <p className="card-text">Event type : online</p>
-          <a href="/" className="btn btn-primary" id="edit">
-            Edit
-          </a>
-          <a href="/" className="btn btn-primary" id="delete">
-            Delete
-          </a>
+          <Button variant="contained" size="small"  id="edit">
+          Edit
+        </Button>
+        <Button variant="contained" size="small"  id="delete">
+          Delete
+        </Button>
         </div>
       </div>
 
@@ -56,12 +56,20 @@ export function AdminPageEventCards() {
           <h5 className="card-title">themepark</h5>
           <p className="card-text">Eventdate : 2022-09-02 : 12.00pm</p>
           <p className="card-text">Event type : online</p>
-          <a href="/" className="btn btn-primary" id="edit">
+          {/* <a href="/" className="btn btn-primary" id="edit">
             Edit
-          </a>
-          <a href="/" className="btn btn-primary" id="delete">
-            Delete
-          </a>
+          </a> */}
+         
+         <Button variant="contained" size="small"  id="edit">
+          Edit
+        </Button>
+
+          {/* onClick={()=>{
+                                    navigate(`/edit-user/${use.id}`)
+                                }}> */}
+         <Button variant="contained" size="small"  id="delete">
+          Delete
+        </Button>
         </div>
       </div>
 
