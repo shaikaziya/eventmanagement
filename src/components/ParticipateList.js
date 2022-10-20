@@ -44,7 +44,7 @@ const getUsers=()=>{
       {/* <th scope="col">Number</th>
       <th scope="col">Member</th>
       <th scope="col">Gender</th> */}
-        <th scope="col">Edit</th>
+        {/* <th scope="col">Edit</th> */}
       <th scope="col">Delete</th>
       
     </tr>
@@ -71,7 +71,7 @@ const getUsers=()=>{
                         
                         
                         </td> */}
-                        <td>
+                        {/* <td>
                             
                                 <IconButton onClick={()=>{
                                     navigate(`/edit-user/${use.id}`)
@@ -80,11 +80,11 @@ const getUsers=()=>{
                                 </IconButton>
                             
                         
-                        </td>
+                        </td> */}
                         <td> 
                                 <IconButton
                                 onClick={()=>{
-                                   fetch(`https://62f4b482535c0c50e7608294.mockapi.io/users/${use.id}`,{method: "DELETE",})
+                                   fetch(`https://62f4b482535c0c50e7608294.mockapi.io/register/${use.id}`,{method: "DELETE",})
                                    .then(()=>getUsers())
                                    
                                }}

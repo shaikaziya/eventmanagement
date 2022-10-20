@@ -8,6 +8,7 @@ import {AddUser} from "./components/AddUser"
 import {ParticipateList} from "./components/ParticipateList"
 import {Registerdummy} from "./components/Registerdummy"
 import {EditEvent} from "./components/EditEvent"
+import {ViewUser} from "./components/ViewUser"
 import { Routes, Route } from "react-router-dom";
 export default function App() {
   return (
@@ -23,6 +24,8 @@ export default function App() {
     <Route path="/participatelist" element={<ParticipateList/>} />
     <Route path="/edit-user" element={<EditEvent/>} />
     {/* <Route path="/register" element={<Registerdummy/>} /> */}
+    <Route path="/:id" element={<ViewUser/>} />
+    
           </Routes>  
       
 
