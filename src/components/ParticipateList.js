@@ -4,8 +4,8 @@ import VisibilityIcon from '@mui/icons-material/Visibility';
 import ModeEditIcon from '@mui/icons-material/ModeEdit';
 import DeleteIcon from '@mui/icons-material/Delete';
 import IconButton from '@mui/material/IconButton';
-
-
+import Button from '@mui/material/Button';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
 export function ParticipateList(){
 
@@ -24,7 +24,12 @@ const getUsers=()=>{
 
     return(
         <div className="home">
-
+ <Button  
+      onClick={() => navigate(-1)}
+      variant="contained" 
+      startIcon={<ArrowBackIosIcon />}>
+  BACK
+</Button>
         
         <div className="container">
             <div className="py-4">
@@ -39,6 +44,8 @@ const getUsers=()=>{
       {/* <th scope="col">Number</th>
       <th scope="col">Member</th>
       <th scope="col">Gender</th> */}
+        <th scope="col">Edit</th>
+      <th scope="col">Delete</th>
       
     </tr>
   </thead>
@@ -63,7 +70,7 @@ const getUsers=()=>{
                           </IconButton>
                         
                         
-                        </td>
+                        </td> */}
                         <td>
                             
                                 <IconButton onClick={()=>{
@@ -87,7 +94,7 @@ const getUsers=()=>{
 
                             
                     
-                    </td> */}
+                    </td>
                     </tr>
                 ))
                     

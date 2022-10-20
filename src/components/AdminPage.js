@@ -19,7 +19,7 @@ export function AdminPage() {
 
           <Button onClick={() => navigate("/participatelist")} color="secondary"><KeyboardArrowRightIcon/>Participate List</Button>
 
-          <button className="btn btn-outline-success" type="submit">
+          <button className="btn btn-outline-success" type="submit" onClick={()=>navigate("/")}>
             Logout
           </button>
         </div>

@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
-export default function EditEvent(){
+export function EditEvent(){
 
     const {id} = useParams()
 
    const[user,setUser]=useState(null)
    useEffect(()=>{
-    fetch(`https://62f4b482535c0c50e7608294.mockapi.io/addnewevent/${id}`,{method: "GET",})
+    fetch(`https://62f4b482535c0c50e7608294.mockapi.io/register/${id}`,{method: "GET",})
     .then(data=>data.json())
     .then((use)=>setUser(use))
   },[])
@@ -22,7 +22,7 @@ export default function EditEvent(){
 function EditUserForm({user}){
 
     const[name, setName]=useState(user.name)
-    const[username, setUsername]=useState(user.username)
+    // const[username, setUsername]=useState(user.username)
     const[email,setEmail]=useState(user.email)
    
     const navigate=useNavigate()
@@ -38,13 +38,7 @@ function EditUserForm({user}){
           type="text" 
           placeholder="edit name" 
           aria-label=".form-control-lg example" />
-          <input 
-          className="form-control form-control-lg mt-3" 
-          value={username}
-           onChange={(event)=> setUsername(event.target.value)}
-          type="username" 
-          placeholder="edit username" 
-          aria-label=".form-control-lg example" />
+          
           <input 
           className="form-control form-control-lg mt-3" 
           value={email}
@@ -57,10 +51,9 @@ function EditUserForm({user}){
   onClick={()=>{
     const updatedUser={
           name:name,
-          username:username,
           email:email,
     }
-fetch(`https://62f4b482535c0c50e7608294.mockapi.io/addnewevent/${user.id}`,
+fetch(`https://62f4b482535c0c50e7608294.mockapi.io/register/${user.id}`,
 {method: "PUT",
    body: JSON.stringify(updatedUser),
    headers: {
@@ -68,7 +61,7 @@ fetch(`https://62f4b482535c0c50e7608294.mockapi.io/addnewevent/${user.id}`,
    }
  })
 .then(data=>data.json())
- .then(()=>navigate("/adminpage")) 
+ .then(()=>navigate("/participatelist")) 
 }
 }
    className="btn btn-info mt-3" type="submit">Add New Event</button>
